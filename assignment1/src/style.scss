@@ -1,0 +1,19 @@
+@import "./sassStyles/normalize.scss";
+@import "./sassStyles/variables.scss";
+
+.subtitle {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+  &:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: $primary_Color;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
