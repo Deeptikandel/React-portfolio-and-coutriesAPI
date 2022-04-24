@@ -1,25 +1,35 @@
-import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import { navList } from '../../data'
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import { Nav } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import { navList } from "../../data";
 
 const Navigationbar = () => {
   return (
-    <>
-      <Navbar bg="secondary" variant="dark" expanded='false' sticky='top'>
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar
+      collapseOnSelect
+      variant="light"
+      expand="lg"
+      sticky="top"
+      style={{ backgroundColor: "#66e2c5" }}
+    >
+      <Container>
+        <Navbar.Brand href="#">DEEPTI</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {navList.map((list) => {
-              return <Nav.Link href={`#${list}`}>{list}</Nav.Link>
-
+              return (
+                <Nav.Link key={list} href={`#${list.toLowerCase()}`}>
+                  {list}
+                </Nav.Link>
+              );
             })}
           </Nav>
-        </Container>
-      </Navbar>
-    </>
-  )
-}
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default Navigationbar
+export default Navigationbar;

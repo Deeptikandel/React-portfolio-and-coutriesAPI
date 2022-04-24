@@ -1,18 +1,18 @@
 import React from "react";
 import "./services.scss";
 import { serviceData } from "../../data";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const Services = () => {
   return (
-    <section class="services" id="services">
-      <h2 class="subtitle">Services</h2>
-      <div class="service-wrapper">
+    <section className="services" id="services">
+      <h2 className="subtitle">Services</h2>
+      <div className="service-wrapper">
         {serviceData.map((service) => {
           return (
-            <div class="service-card">
-              <h3 class="service-card-title">{service.title}</h3>
-              <p class="services-description">{service.description}</p>
+            <div className="service-card" key={service.title}>
+              <h3 className="service-card-title">{service.title}</h3>
+              <p className="services-description">{service.description}</p>
               <Button variant="outline-success">Read more</Button>
             </div>
           );

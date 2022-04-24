@@ -12,8 +12,11 @@
     height: 2px;
     background-color: $primary_Color;
     position: absolute;
-    top: 35px;
+    top: 45px;
     left: 50%;
     transform: translateX(-50%);
   }
+}
+button {
+  margin-top: 16px;
 }
