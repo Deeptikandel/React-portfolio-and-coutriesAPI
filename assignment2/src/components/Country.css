@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact {
+  margin: 30px auto;
+  width: 80%;
+  text-align: center;
+  color: rgb(136, 121, 121);
+}
+.contact-form {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+  background-color: rgb(156, 161, 64);
+}
+.form-field {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  background: #000;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 70%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
